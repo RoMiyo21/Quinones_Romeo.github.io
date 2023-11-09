@@ -1,69 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Simple Webpage</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DevBookShelf</title>
+    
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Add your custom CSS here -->
+    <style>
+        /* Custom CSS for the background image and container styles */
+        body {
+            background-image: url('Images/pexels-stanislav-kondratiev-2908984.jpg'); /* Replace with your image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-color: #f7f7f7; /* Fallback background color */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to the container */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        th {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        th, td {
+            text-align: center;
+        }
+        h1 {
+            color: #333; /* Change the header text color */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Change the "Read" button background color */
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Change the "Read" button background color on hover */
+            border-color: #0056b3;
+        }
+        .cover-image {
+            max-width: 100px; /* Set the maximum width for book cover images */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Keyboard Eporium</h1>
-        <img src="https://i.ibb.co/SvnwK70/22-Qui-ones-Jr-Romeo-M.png" class="logo">
-        <nav>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h2>Home</h2>
-        <p>At Keyboard Eporium, we're passionate about all things keyboards, and we're here to serve your every keyboard need. Whether you're an avid gamer, a dedicated typist, a creative professional, or someone who just appreciates the perfect keypress, you've come to the right place.</p>
-    </section>
+    <div class="container mt-3">
+        <h1 class="text-center mb-4">DevBookShelf</h1>
+        
+        <!-- Create a Bootstrap table with enhanced visual design -->
+        <table class="table table-bordered table-hover table-responsive-lg">
+            <thead>
+                <tr>
+                    <th>Books</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/AlgorithmsGrow.png" alt="Book Cover 1" class="cover-image">
+                            <a href="https://drive.google.com/file/d/19GBvgsb_sT5VGrJDWG1E3HEVWq8KokzT/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Algorithm</td>
+                    <td>Romeo Pogi</td>
+                    <td>Programming</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/Design_Patterns.jpg" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1P0pPEpJ4fmb51EhY3WV6bqp8wOQr9Jkc/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Design Patterns_ Elements of Reusable Object-Oriented Software</td>
+                    <td>Erich Gamma, Richard Helm, Ralph Johnson, John M. Vlissides, Addison-Wesley</td>
+                    <td>Programming</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/CGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1pNvs08EAfALgm_nKoz5Aw69zRWszO82K/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>C</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/CPlusPlusGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1V41u7kIySgpT_XcgcqoE3fWpTq4vKneF/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>C++</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/CSharpGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1S66Igl8DPjkdPtOTcvLUd60j_nzdUuYs/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>C#</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/ObjectiveCGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1PUK3BPbuFFz-GmkhZWxEEXkzmPQC0ARI/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Objective C</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/JavaGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/198Aa8FZoJscPGPf3BWSRRdKY_kl1wTqZ/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Java</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/JavaScriptGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1LjCismM9_-4E8lTh10scShsGaUK_glgb/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>JavaScript</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/PythonGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1SHpHD_hku_tDdhbeqODl1z_7Uyw-hWIl/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Python</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/PHPGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/13UojrLoV7-an6YQWg1AqNIqDAhQokH9i/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>PHP</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/PerlGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1DUBcvi-bryr9ySsLVv1wZVp5cxlSduuq/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Perl</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/RubyGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1BRQpSX18xoU9tk1_8Mv9Y9nPiUiK5F6I/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Ruby</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/SwiftGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1pzxLUFKkhoJmCUhjnoaJ_6AB4j_JAJ1x/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Swift</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/TypeScriptGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1fD93ixpBXA5vp9-W9dQFPZi_pNT3zqxc/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>TypeScript</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/VBAGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1MVctOs0f2wS4T6NehRQambOmJeFGO_eM/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Visual Basic for Application</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="Images/VisualBasic_NETGrow.png" alt="Book Cover 2" class="cover-image">
+                            <a href="https://drive.google.com/file/d/1pzxLUFKkhoJmCUhjnoaJ_6AB4j_JAJ1x/view" target="_blank" class="btn btn-primary btn-sm mt-2">Read</a>
+                        </div>
+                    </td>
+                    <td>Visual Basic .Net</td>
+                    <td>Unofficial Book</td>
+                    <td>Programming Language</td>
+                </tr>
+                <!-- Add more rows as needed with corresponding cover images and links -->
+            </tbody>
+        </table>
+    </div>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>Welcome to Keyboard Eporium, your one-stop destination for all things related to computer keyboards. We are passionate keyboard enthusiasts, dedicated to providing top-quality keyboard solutions for every need and preference.
-
-<br><br>Our Story<br>
-
-Keyboard Eporium was founded with a deep love for keyboards and a commitment to sharing that passion with the world. Our journey began when we realized the impact that the perfect keyboard can have on your computing experience. Whether you're a gamer seeking lightning-fast responsiveness, a programmer demanding precision, or a professional in search of ergonomic comfort, the right keyboard makes all the difference.
-
-<br><br>Our Mission<br>
-
-At Keyboard Eporium, our mission is simple: to offer a wide selection of keyboards that cater to all kinds of users. We believe that the keyboard is more than just a tool; it's an essential part of your daily life. That's why we're dedicated to delivering keyboards that not only meet your functional needs but also reflect your unique style.
-
-<br><br>Why Choose Us?<br>
-
-Expertise: Our team of keyboard experts is always ready to assist you in making the perfect choice. Whether you're a novice or a seasoned keyboard connoisseur, we have the knowledge to guide you.
-
-<br><br>Quality Assurance: We take pride in offering only the highest quality keyboards from trusted manufacturers. Each product is handpicked to ensure reliability and durability.
-
-<br><br>Customization: We understand that no two users are the same. That's why we provide customization options, so your keyboard can be as unique as you are.
-
-<br><br>Customer-Centric: Our commitment to exceptional customer service means you're not just a customer; you're a valued member of our keyboard-loving community.</p>
-    </section>
-
-    <section id="services">
-        <h2>Services</h2>
-        <ul>
-            <li>Keyboard Repair and Maintenance Services</li>
-            <li>Custom Keyboard Building and Modification</li>
-            <li>Keyboard Sales and Consultation</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Contact us at romeoquinones4@gmail.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; Keyboard Eporium</p>
-    </footer>
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
