@@ -245,9 +245,37 @@
         </table>
     </div>
 
-    <!-- Include Bootstrap JS and jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Footer with JavaScript button -->
+<footer class="text-center mt-5">
+    <button onclick="goToResume()" class="btn btn-primary custom-button">Go to Resume</button>
+</footer>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- JavaScript function to navigate to the resume URL -->
+<script>
+    function goToResume() {
+        window.location.href = 'https://raw.githubusercontent.com/RoMiyo21/Quinones_Romeo.github.io/main/download.png'; // Replace with the actual URL of your resume
+    }
+</script>
+
+<!-- Custom Styles -->
+<style>
+    .custom-button {
+        background-color: #3498db;
+        color: #fff;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .custom-button:hover {
+        background-color: #2980b9;
+        color: #fff;
+    }
+</style>
+
+
 </body>
 </html>
